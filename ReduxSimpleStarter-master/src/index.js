@@ -9,7 +9,7 @@ import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 class Hello extends react.Component {
-  render() { return <div>Hello</div>}
+  render() { return <div>Hello!</div> }
 }
 
 class GoodBye extends react.Component {
@@ -20,6 +20,7 @@ ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <BrowserRouter>
        <div>
+           Header
            <Route path="/hello" Component={Hello} />
            <Route path="/GoodBye" Component={GoodBye} />
        </div>
