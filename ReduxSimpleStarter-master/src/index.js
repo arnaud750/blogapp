@@ -13,7 +13,7 @@ class Hello extends react.Component {
 }
 
 class GoodBye extends react.Component {
-  render() { return <div>GoodBye!</div>}
+  render() { return <div>GoodBye!</div> }
 }
 
 ReactDOM.render(
